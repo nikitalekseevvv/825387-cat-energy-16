@@ -1,5 +1,14 @@
 .page-category {
   margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: @desktop-width) {
+  .page-category {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .page-category__item {
@@ -9,6 +18,21 @@
   padding-right: 36px;
   padding-bottom: 22px;
   margin-bottom: 20px;
+}
+
+@media (min-width: @desktop-width) {
+  .page-category__item {
+    width: 518px;
+    padding-left: 52px;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-category__item:nth-child(2n+1) {
+    margin-left: 80px;
+  }
 }
 
 .page-category__title {
