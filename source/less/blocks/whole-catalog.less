@@ -2,16 +2,6 @@
   padding-bottom: 25px;
 }
 
-@media (min-width: @tablet-width) {
-  .whole-catalog {
-    width: 324px;
-  }
-
-  .catalog__item:nth-child(2n+1) {
-    margin-right: 60px;
-  }
-}
-
 .whole-catalog__title {
   color: @black-two;
   font-size: 16px;
@@ -31,4 +21,16 @@
 .whole-catalog__button {
   background-color: @light-grey;
   color: @dark-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .whole-catalog {
+    width: 324px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .whole-catalog {
+    width: 245px;
+  }
 }

@@ -12,21 +12,17 @@
     min-height: 108px;
     flex-wrap: nowrap;
   }
-}
 
-@media (min-width: @desktop-width) {
-  .page-header {
-    min-height: 142px;
-  }
-}
-
-@media (min-width: @tablet-width) {
   .page-header__burger {
     display: none;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    min-height: 142px;
+  }
+
   .page-header--index::after {
     content: "";
     position: absolute;
