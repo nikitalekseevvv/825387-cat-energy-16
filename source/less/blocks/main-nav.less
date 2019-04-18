@@ -1,8 +1,45 @@
+.main-nav {
+  width: 100%;
+}
+
+.main-nav__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .list-reset();
+}
+
 .main-nav__item {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
   color: @black-two;
+}
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    width: auto;
+  }
+
+  .main-nav__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav__item {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__list--index .main-nav__item {
+    color: white;
+  }
 }

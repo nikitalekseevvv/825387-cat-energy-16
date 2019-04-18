@@ -1,9 +1,16 @@
 .contacts {
   padding-top: 31px;
-  padding-left: 19px;
+  position: relative;
+}
+
+.contacts__address {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .contacts__title {
+  width: 123px;
   color: @black-two;
   font-size: 16px;
   line-height: 20px;
@@ -11,8 +18,24 @@
 }
 
 .contacts__description {
+  width: 134px;
   font-family: "Arial", sans-serif;
   color: @dark-grey;
   font-size: 14px;
   line-height: 20px;
+}
+
+.contacts img {
+  width: 100%;
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__address {
+    position: absolute;
+    width: 570px;
+    min-height: 201px;
+    top: 95px;
+    left: 110px;
+    background-color: white;
+  }
 }

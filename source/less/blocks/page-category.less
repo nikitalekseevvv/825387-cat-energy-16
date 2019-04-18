@@ -1,5 +1,7 @@
 .page-category {
   margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
 }
 
 .page-category__item {
@@ -31,4 +33,22 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+}
+
+@media (min-width: @desktop-width) {
+  .page-category {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .page-category__item {
+    width: 518px;
+    padding-left: 52px;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .page-category__item:nth-child(2n+1) {
+    margin-left: 80px;
+  }
 }
