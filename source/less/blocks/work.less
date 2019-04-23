@@ -2,26 +2,54 @@
   margin-bottom: 42px;
 }
 
+.work__title {
+  color: @black-two;
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: normal;
+  background-color: red;
+}
+
 .work__list {
   .list-reset();
   display: flex;
   flex-direction: column;
 }
 
-.work__title {
-  color: @black-two;
-  font-size: 36px;
-  line-height: 60px;
-  font-weight: normal;
-}
-
 .work__item {
+  display: block;
   color: @dark-grey;
   font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   padding-left: 80px;
-  margin-bottom: 32px;
+  margin-bottom: 27px;
+  position: relative;
+}
+
+.work__item::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: @leaf;
+  top: -2px;
+  left: 0;
+}
+
+.work__item::after {
+  content: "";
+  position: absolute;
+  display: block;
+}
+
+.work__item:first-child::after {
+  width: 26px;
+  height: 29px;
+  background-image: url("../img/advantage-1-png.png");
+  top: 15px;
+  left: 17px;
 }
 
 @media (min-width: @tablet-width) {
