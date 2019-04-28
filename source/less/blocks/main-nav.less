@@ -23,7 +23,7 @@
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-  width: 100%;
+  width: auto;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
@@ -31,19 +31,28 @@
   text-transform: uppercase;
   color: @black-two;
   border-top: 1px solid @light-grey;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .main-nav {
     width: auto;
     display: block;
+    margin-top: 16px;
   }
 
   .main-nav__list {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: red;
     margin-top: 27px;
   }
 
@@ -56,6 +65,11 @@
     font-size: 18px;
     line-height: 25px;
     font-weight: normal;
+    margin-right: 37px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .main-nav__item a {

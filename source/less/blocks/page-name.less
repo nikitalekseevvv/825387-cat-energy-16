@@ -1,8 +1,5 @@
 .page-name {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  position: relative;
 }
 
 .page-name--index {
@@ -39,15 +36,14 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-name {
-    align-items: flex-start;
-    position: relative;
-  }
-
   .page-name--index {
-    min-height: 874px;
+    min-height: 825px;
     background-image: none;
     padding-left: 90px;
+  }
+
+  .page-name--index .center-wrapper {
+    background-image: none;
   }
 
   .page-name--index::before {
@@ -55,16 +51,20 @@
     position: absolute;
     width: 709px;
     height: 609px;
-    top: 250px;
+    top: 238px;
+    left: 195px;
     background-image: url("../img/index-can-tablet@1x.jpg");
     z-index: -1;
   }
 
   .page-name__title {
+    display: block;
     font-size: 60px;
     line-height: 60px;
     color: black;
     text-align: left;
+    margin-left: 44px;
+    width: 430px;
   }
 
   .page-name__description {
@@ -72,6 +72,8 @@
     line-height: 20px;
     color: black;
     text-align: left;
+    margin-left: 44px;
+    margin-bottom: 44px;
   }
 
   .page-name__img {
@@ -80,6 +82,7 @@
 
   .page-name__button {
     margin: 0;
+    margin-left: 44px;
   }
 }
 

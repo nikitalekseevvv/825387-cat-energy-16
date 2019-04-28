@@ -46,6 +46,7 @@
   width: 35px;
   height: 49px;
   background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
   top: 22px;
   left: 30px;
 }
@@ -57,6 +58,7 @@
   width: 67px;
   height: 28px;
   background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
   top: 35px;
   left: 13px;
 }
@@ -87,6 +89,10 @@
   text-transform: uppercase;
   position: relative;
   margin-bottom: 22px;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page-category__button::after {
@@ -98,6 +104,83 @@
   background-image: url("../img/right-arrow-long.svg");
   top: 2px;
   left: 95px;
+}
+
+.page-category__button:hover::after,
+.page-category__button:focus::after {
+  width: 34px;
+  background-image: url("../img/right-arrow-verylong-svg.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .page-category {
+    margin-bottom: 45px;
+  }
+
+  .page-category__item {
+    padding-top: 40px;
+    padding-left: 53px;
+    margin-bottom: 30px;
+  }
+
+  .page-category__title {
+    font-size: 36px;
+    line-height: 37px;
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+
+  .page-category__description {
+    display: block;
+    width: 380px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 58px;
+  }
+
+  .page-category__item--increase .page-category__description {
+    width: 340px;
+  }
+
+  .page-category__item--increase .page-category__button::after {
+    left: 125px;
+  }
+
+
+  .page-category__button {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 60px;
+  }
+
+  .page-category__button::after {
+    left: 130px;
+  }
+
+  .page-category__description::after {
+    display: none;
+  }
+
+  .page-category__title::before {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: 446px;
+  }
+
+  .page-category__title--losing::after {
+    width: 141px;
+    height: 194px;
+    top: 80px;
+    left: 475px;
+  }
+
+  .page-category__title--increase::after {
+    width: 268px;
+    height: 113px;
+    top: 135px;
+    left: 412px;
+  }
 }
 
 @media (min-width: @desktop-width) {
