@@ -12,7 +12,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 300px;
-  padding-left: 20px;
+  padding-left: 19px;
   padding-bottom: 10px;
   z-index: 1;
 }
@@ -27,6 +27,8 @@
 }
 
 .contacts__description {
+  display: block;
+  margin-top: 16px;
   width: 140px;
   font-family: "Arial", sans-serif;
   color: @dark-grey;
@@ -35,32 +37,28 @@
 }
 
 .contacts-map {
-  margin-top: 63px;
-  display: block;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
-}
 
-.contacts-map--tablet {
-  display: none;
-}
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 55px;
+    height: 53px;
+    background-image: url("../img/map-pin.png");
+    background-size: cover;
+    top: 178px;
+    left: 129px;
+    z-index: 2;
+  }
 
-.contacts-map--desktop {
-  display: none;
-}
-
-.contacts::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 55px;
-  height: 53px;
-  background-image: url("../img/map-pin.png");
-  background-size: cover;
-  top: 271px;
-  left: 192px;
-  z-index: 2;
+  img {
+    margin-top: 63px;
+    display: block;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -69,7 +67,7 @@
     position: relative;
     width: 625px;
     padding-left: 0;
-    padding-bottom: 20px;
+    padding-bottom: 0;
   }
 
   .contacts__title {
@@ -92,23 +90,20 @@
   }
 
   .contacts-map {
-    display: none;
-  }
+    width: 768px;
 
-  .contacts-map--tablet {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-  }
+    &::after {
+      width: 113px;
+      height: 106px;
+      top: 145px;
+      left: 324px;
+    }
 
-  .contacts::after {
-    width: 113px;
-    height: 106px;
-    background-image: url("../img/map-pin.png");
-    background-size: cover;
-    top: 333px;
-    left: 407px;
+    img {
+      margin-top: 40px;
+      width: 767px;
+      height: 400px;
+    }
   }
 }
 
@@ -116,29 +111,27 @@
   .contacts__address {
     position: absolute;
     width: 494px;
-    min-height: 136px;
-    top: 125px;
+    min-height: 156px;
+    top: 160px;
     left: 488px;
     z-index: 1;
     padding-left: 76px;
-    padding-top: 45px;
+    padding-top: 47px;
   }
 
-  .contacts-map--tablet {
-    display: none;
-  }
+  .contacts-map {
+    width: 1440px;
 
-  .contacts-map--desktop {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    z-index: -2;
-  }
+    &::after {
+      top: 145px;
+      left: 999px;
+    }
 
-  .contacts::after {
-    top: 180px;
-    left: 1090px;
+    img {
+      z-index: -2;
+      width: 1440px;
+      height: 400px;
+    }
   }
 
   .contacts__title {
