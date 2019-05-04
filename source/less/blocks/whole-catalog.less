@@ -1,5 +1,16 @@
 .whole-catalog {
   padding-bottom: 25px;
+  padding-top: 27px;
+}
+
+.whole-catalog svg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  fill: #ebebeb;
+  margin-bottom: 24px;
+  width: 31px;
+  height: 31px;
 }
 
 .whole-catalog__title {
@@ -8,6 +19,7 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 6px;
 }
 
 .whole-catalog__description {
@@ -16,21 +28,73 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 21px;
 }
 
 .whole-catalog__button {
   background-color: @light-grey;
   color: @dark-grey;
+  font-size: 16px;
+  line-height: 20px;
+
+  &:hover,
+  &:focus {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
   .whole-catalog {
-    width: 324px;
+    width: 322px;
+    margin-top: 140px;
+    border: 1px solid #cdcdcd;
+    padding-top: 51px;
+  }
+
+  .whole-catalog svg {
+    width: 61px;
+    height: 61px;
+    padding-bottom: 28px;
+  }
+
+  .whole-catalog__title {
+    display: block;
+    width: 135px;
+    font-size: 20px;
+    line-height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+
+  .whole-catalog__description {
+    display: block;
+    width: 190px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 86px;
+  }
+
+  .whole-catalog__button {
+    width: 249px;
+    padding-top: 10px;
+    min-height: 30px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .whole-catalog {
-    width: 245px;
+    width: 243px;
+  }
+
+  .whole-catalog__button {
+    width: 169px;
   }
 }

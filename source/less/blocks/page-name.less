@@ -1,14 +1,17 @@
 .page-name {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
 }
 
 .page-name--index {
+  background-image: linear-gradient(#63a73a 305px, white 305px);
+}
+
+
+.page-name--index .center-wrapper {
   background-image: url("../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
   background-position: top center;
-  padding-top: 19px;
+  padding-top: 2px;
 }
 
 .page-name__title {
@@ -19,6 +22,16 @@
   text-align: center;
 }
 
+.page-name__title--catalog {
+  display: block;
+  color: @black-two;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+  margin-bottom: 39px;
+}
+
 .page-name__description {
   font-size: 14px;
   line-height: 14px;
@@ -26,18 +39,23 @@
   color: white;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 31px;
+}
+
+.page-name__img {
+  margin-bottom: 1px;
+  margin-left: 19px;
 }
 
 @media (min-width: @tablet-width) {
-  .page-name {
-    align-items: flex-start;
-    position: relative;
-  }
-
   .page-name--index {
-    min-height: 874px;
+    min-height: 825px;
     background-image: none;
     padding-left: 90px;
+  }
+
+  .page-name--index .center-wrapper {
+    background-image: none;
   }
 
   .page-name--index::before {
@@ -45,16 +63,20 @@
     position: absolute;
     width: 709px;
     height: 609px;
-    top: 250px;
+    top: 238px;
+    left: 236px;
     background-image: url("../img/index-can-tablet@1x.jpg");
     z-index: -1;
   }
 
   .page-name__title {
+    display: block;
     font-size: 60px;
     line-height: 60px;
     color: black;
     text-align: left;
+    margin-left: 44px;
+    width: 430px;
   }
 
   .page-name__description {
@@ -62,6 +84,8 @@
     line-height: 20px;
     color: black;
     text-align: left;
+    margin-left: 44px;
+    margin-bottom: 44px;
   }
 
   .page-name__img {
@@ -70,6 +94,14 @@
 
   .page-name__button {
     margin: 0;
+    margin-left: 44px;
+  }
+
+  .page-name__title--catalog {
+    margin-left: 0;
+    padding: 0;
+    margin-top: 36px;
+    margin-bottom: 26px;
   }
 }
 
@@ -84,8 +116,29 @@
     width: 552px;
     height: 499px;
     top: 0;
-    left: 370px;
+    left: 653px;
     background-image: url("../img/index-can-desktop@1x.png");
-    z-index: -1;
+    z-index: 1;
+  }
+
+  .page-name__title {
+    padding-top: 38px;
+    margin-left: 35px;
+  }
+
+  .page-name__description {
+    margin-left: 35px;
+    margin-bottom: 54px;
+  }
+
+  .page-name__button {
+    margin-left: 35px;
+  }
+
+  .page-name__title--catalog {
+    margin-left: 0;
+    padding: 0;
+    margin-top: 46px;
+    margin-bottom: 24px;
   }
 }
