@@ -1,0 +1,241 @@
+.page-category {
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-category__item {
+  background-color: @light-grey;
+  padding-top: 6px;
+  padding-left: 21px;
+  padding-right: 20px;
+  margin-bottom: 19px;
+  position: relative;
+}
+
+.page-category__item:last-child {
+  margin-bottom: 0;
+}
+
+.page-category__title {
+  color: @black-two;
+  font-size: 24px;
+  line-height: 37px;
+  margin-left: 70px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.page-category__title::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 51px;
+  background-color: @leaf;
+  border-radius: 50%;
+  top: 24px;
+  left: 22px;
+}
+
+.page-category__title--losing::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 49px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-repeat: no-repeat;
+  top: 22px;
+  left: 30px;
+}
+
+.page-category__title--increase::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 67px;
+  height: 28px;
+  background-image: url("../img/icon-cat-pro.svg");
+  background-repeat: no-repeat;
+  top: 35px;
+  left: 13px;
+}
+
+.page-category__description {
+  font-family: "Arial", sans-serif;
+  color: @dark-grey;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.page-category__description::after {
+  content: "";
+  display: block;
+  width: auto;
+  height: 1px;
+  margin-top: 21px;
+  background-color: @dark-grey;
+  opacity: 0.3;
+  margin-bottom: 20px;
+}
+
+.page-category__button {
+  display: block;
+  color: @black-two;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  position: relative;
+  margin-bottom: 22px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page-category__button::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 25px;
+  height: 12px;
+  background-image: url("../img/right-arrow-long.svg");
+  top: 2px;
+  left: 95px;
+}
+
+.page-category__button:hover::after,
+.page-category__button:focus::after {
+  width: 34px;
+  background-image: url("../img/right-arrow-verylong-svg.svg");
+}
+
+@media (min-width: @tablet-width) {
+  .page-category {
+    margin-bottom: 45px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .page-category__item {
+    padding-top: 40px;
+    padding-left: 53px;
+    margin-bottom: 30px;
+  }
+
+  .page-category__title {
+    font-size: 36px;
+    line-height: 37px;
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+
+  .page-category__description {
+    display: block;
+    width: 380px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 58px;
+  }
+
+  .page-category__item--increase .page-category__description {
+    width: 340px;
+  }
+
+  .page-category__item--increase .page-category__button::after {
+    left: 125px;
+  }
+
+
+  .page-category__button {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 60px;
+  }
+
+  .page-category__button::after {
+    left: 130px;
+  }
+
+  .page-category__description::after {
+    display: none;
+  }
+
+  .page-category__title::before {
+    width: 200px;
+    height: 200px;
+    top: 92px;
+    left: 446px;
+  }
+
+  .page-category__title--losing::after {
+    width: 141px;
+    height: 194px;
+    top: 80px;
+    left: 475px;
+  }
+
+  .page-category__title--increase::after {
+    width: 268px;
+    height: 113px;
+    top: 135px;
+    left: 412px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-category {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    margin-bottom: 73px;
+  }
+
+  .page-category__item {
+    width: 518px;
+    padding-left: 52px;
+    padding-right: 0;
+    margin-bottom: 0;
+  }
+
+  .page-category__item:nth-child(2n+1) {
+    margin-left: 80px;
+  }
+
+  .page-category__title {
+    margin-left: 162px;
+    margin-bottom: 73px;
+  }
+
+  .page-category__description {
+    width: 465px;
+    margin-bottom: 34px;
+  }
+
+  .page-category__item--increase .page-category__description {
+    width: 480px;
+  }
+
+  .page-category__title::before {
+    width: 100px;
+    height: 100px;
+    top: 47px;
+    left: 52px;
+  }
+
+  .page-category__title--losing::after {
+    width: 71px;
+    height: 97px;
+    top: 41px;
+    left: 66px;
+  }
+
+  .page-category__title--increase::after {
+    width: 134px;
+    height: 57px;
+    top: 69px;
+    left: 34px;
+  }
+}
