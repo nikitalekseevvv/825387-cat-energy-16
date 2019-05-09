@@ -53,40 +53,48 @@
 .page-footer__item {
   &--vk {
     margin-right: 35px;
+
+    svg {
+      width: 22px;
+      height: 12px;
+    }
   }
 
   &--insta {
     margin-right: 40px;
+
+    svg {
+      width: 17px;
+      height: 17px;
+    }
+  }
+
+  &--fb {
+    svg {
+      width: 10px;
+      height: 19px;
+    }
   }
 }
 
-.page-footer__item--vk svg {
-  width: 22px;
-  height: 12px;
-}
+.page-footer__link {
+  svg {
+    fill: #666666;
+  }
 
-.page-footer__item--insta svg {
-  width: 17px;
-  height: 17px;
-}
+  &:hover,
+  &:focus {
+    svg {
+      fill: @leaf;
+    }
+  }
 
-.page-footer__item--fb svg {
-  width: 10px;
-  height: 19px;
-}
-
-.page-footer__link svg {
-  fill: #666666;
-}
-
-.page-footer__link:hover svg,
-.page-footer__link:focus svg {
-  fill: @leaf;
-}
-
-.page-footer__link:active svg {
-  fill: @leaf;
-  opacity: 0.3;
+  &:active {
+    svg {
+      fill: @leaf;
+      opacity: 0.3;
+    }
+  }
 }
 
 .page-footer__htmlacademy {

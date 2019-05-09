@@ -36,7 +36,7 @@
   line-height: 20px;
 }
 
-.contacts-map {
+.contacts__map {
   width: 320px;
   margin-left: auto;
   margin-right: auto;
@@ -89,7 +89,7 @@
     margin-top: 21px;
   }
 
-  .contacts-map {
+  .contacts__map {
     width: 768px;
 
     &::after {
@@ -111,15 +111,17 @@
   .contacts__address {
     position: absolute;
     width: 494px;
-    min-height: 156px;
+    min-height: 154px;
+    max-height: 200px;
     top: 160px;
     left: 488px;
     z-index: 1;
     padding-left: 76px;
     padding-top: 47px;
+    overflow-y: auto;
   }
 
-  .contacts-map {
+  .contacts__map {
     width: 1440px;
 
     &::after {

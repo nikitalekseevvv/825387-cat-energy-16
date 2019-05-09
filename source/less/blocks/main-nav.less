@@ -111,9 +111,11 @@
         color: white;
       }
     }
-  }
 
-  .main-nav__list--catalog-and-filter .main-nav__item--active::after {
-    background-color: @leaf;
+    &--catalog-and-filter {
+      &::after {
+        background-color: @leaf;
+      }
+    }
   }
 }

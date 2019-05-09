@@ -7,8 +7,8 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <div style="display: none;">
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <body>
+    <svg style="display: none;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
       <symbol id="icon-htmlacademy" viewBox="0 0 26.943 34.09">
         <path d="M13.62,0.017L13.472,0L0,1.412v24.661l13.473,8.017l13.43-7.99l0.042-0.025V1.412L13.62,0.017z M25.019,12.127L13.495,5.334 L13.494,5.23l-0.087,0.05l-0.088-0.056v0.109L1.925,12.118V3.147l11.548-1.212l11.547,1.212V12.127z M13.405,6.787L24.923,13.5 l-4.479,2.64l-7.093-4.221l-0.014,1.415l5.904,3.513l-0.86,0.507l-5.03-2.992l-0.014,1.415l3.827,2.275l-0.782,0.523l-3.031-1.787 l-0.014,1.413l1.853,1.091l-1.8,1.081L2.034,13.622L13.405,6.787z M1.925,15.127l11.411,6.791l0.016,1.044L5.41,18.234L5.395,19.65 l7.979,4.795l0.018,1.076l-7.973-4.74l-0.013,1.414l8.021,4.822l0.046,0.025l8.143-4.872l-0.011-5.177l3.415-2.036v10.021 L13.472,31.85L1.925,24.979V15.127z"/>
       </symbol>
@@ -49,62 +49,58 @@
         </g>
       </symbol>
     </svg>
-  </div>
-  <body>
-    <div class="cat-background">
-      <div class="center-wrapper">
-        <header class="page-header page-header--index">
-          <a class="page-header__logo">
-            <picture>
-              <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
-              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-              <img class="page-header__logo-img" src="img/logo-mobile-header.svg" width="191" height="39" alt="Cat Energy">
-            </picture>
-          </a>
-          <button class="page-header__burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <nav class="main-nav main-nav--closed main-nav--nojs">
-            <ul class="main-nav__list main-nav__list--index">
-              <li class="main-nav__item main-nav__item--index main-nav__item--active">
-                <a>Главная</a>
-              </li>
-              <li class="main-nav__item main-nav__item--index">
-                <a href="catalog.html">Каталог продукции</a>
-              </li>
-              <li class="main-nav__item main-nav__item--index">
-                <a href="form.html">Подбор программы</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-      </div>
-      <main>
-        <section class="page-name page-name--index">
-          <div class="center-wrapper">
-            <h1 class="page-name__title">Функциональное питание для котов</h1>
-            <p class="page-name__description">Занялся собой? Займись котом!</p>
-            <picture>
-              <img class="page-name__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy Курица">
-            </picture>
-            <a class="page-name__button btn" href="form.html">Подобрать программу</a>
-          </div>
-        </section>
-      </div>
+    <div class="center-wrapper">
+      <header class="page-header page-header--index">
+        <a class="page-header__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+            <img class="page-header__logo-img" src="img/logo-mobile-header.svg" width="191" height="39" alt="Cat Energy">
+          </picture>
+        </a>
+        <button class="page-header__burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <nav class="main-nav main-nav--closed main-nav--nojs">
+          <ul class="main-nav__list main-nav__list--index">
+            <li class="main-nav__item main-nav__item--index main-nav__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--index">
+              <a href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="main-nav__item main-nav__item--index">
+              <a href="form.html">Подбор программы</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <section class="page-name page-name--index">
+        <div class="center-wrapper">
+          <h1 class="page-name__title">Функциональное питание для котов</h1>
+          <p class="page-name__description">Занялся собой? Займись котом!</p>
+          <picture>
+            <img class="page-name__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy Курица">
+          </picture>
+          <a class="page-name__button btn" href="form.html">Подобрать программу</a>
+        </div>
+      </section>
       <div class="center-wrapper">
         <section class="page-category">
           <h2 class="visually-hidden">Выбор программы питания для кота</h2>
           <div class="page-category__item">
             <h3 class="page-category__title page-category__title--losing">Похудение</h3>
-            <p class="page-category__description">
+            <p class="page-category__description page-category__description--losing">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
             <a class="page-category__button" href="#">Каталог Slim</a>
           </div>
           <div class="page-category__item page-category__item--increase">
             <h3 class="page-category__title page-category__title--increase">Набор массы</h3>
-            <p class="page-category__description">
+            <p class="page-category__description page-category__description--increase">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a class="page-category__button" href="#">Каталог Pro</a>
+            <a class="page-category__button page-category__button--increase" href="#">Каталог Pro</a>
           </div>
         </section>
       </div>
@@ -126,7 +122,7 @@
           <p class="contacts__description">ул. Большая Конюшенная, д. 19/8 <span class="contacts-city">Санкт-Петербург</span></p>
         </div>
         <!-- Карту исправлю потом на интерактивную -->
-        <div class="contacts-map">
+        <div class="contacts__map">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
             <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
