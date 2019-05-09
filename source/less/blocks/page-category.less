@@ -113,6 +113,7 @@
   &:focus::after {
     width: 34px;
     background-image: url("../img/right-arrow-verylong-svg.svg");
+    right: -44px;
   }
 }
 
@@ -186,9 +187,19 @@
       right: -50px;
     }
 
+    &:hover::after,
+    &:focus::after {
+      right: -59px;
+    }
+
     &--increase {
       &::after {
         right: -48px;
+      }
+
+      &:hover::after,
+      &:focus::after {
+        right: -57px;
       }
     }
   }
