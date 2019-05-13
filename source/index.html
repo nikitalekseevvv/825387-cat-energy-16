@@ -78,6 +78,57 @@
           </ul>
         </section>
       </div>
+
+        <section class="example">
+          <div class="center-wrapper">
+            <div class="example-info">
+              <h2 class="example__title">Живой пример</h2>
+              <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <ul class="example__list">
+                <li class="example__item example__item--weight">
+                  <p class="example__value">5 кг</p>
+                  <p class="example__text">снижение веса</p>
+                </li>
+                <li class="example__item">
+                  <p class="example__value">60 дней</p>
+                  <p class="example__text example__text--days">затрачено времени</p>
+                </li>
+                <li>
+                  <p class="example__price">Затраты на питание: <span class="example__num">15 000 руб.</span></p>
+                </li>
+              </ul>
+            </div>
+            <div class="example__slider">
+              <div class="example-images">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp, img/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp, img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/before-mobile@1x.webp, img/before-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png, img/before-tablet@2x.png 2x">
+                  <img class="example__img example__img--before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Большой кот">
+                </picture>
+                <picture>
+                  <source type="image/webp" media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp, img/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/after-mobile@1x.webp, img/after-mobile@2x.webp 2x">
+
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png, img/after-tablet@2x.png 2x">
+                  <img class="example__img example__img--after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Большой кот">
+                </picture>
+              </div>
+              <div class="example__range">
+                <button class="example__btn example__btn--before">Было</button>
+                <div class="example__progress">
+                  <div class="example__toggle"></div>
+                </div>
+                <button class="example__btn example__btn--after">Стало</button>
+              </div>
+            </div>
+        </section>
+
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts__address">
