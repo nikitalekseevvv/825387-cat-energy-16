@@ -20,7 +20,7 @@
             <img class="page-header__logo-img" src="img/logo-mobile.svg" width="191" height="39" alt="Cat Energy">
           </picture>
         </a>
-        <button class="page-header__burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="page-header__burger page-header__burger--nojs" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <nav class="main-nav main-nav--closed main-nav--nojs">
           <ul class="main-nav__list main-nav__list--index">
             <li class="main-nav__item main-nav__item--index main-nav__item--active">
@@ -177,22 +177,23 @@
       </footer>
     </div>
     <script>
-  var navMain = document.querySelector('.main-nav');
-  var navToggle = document.querySelector('.page-header__burger');
+      var navMain = document.querySelector('.main-nav');
+      var navToggle = document.querySelector('.page-header__burger');
 
-  navMain.classList.remove('main-nav--nojs');
+      navMain.classList.remove('main-nav--nojs');
+      navToggle.classList.remove('page-header__burger--nojs');
 
-  navToggle.addEventListener('click', function() {
-    if (navMain.classList.contains('main-nav--closed')) {
-      navMain.classList.remove('main-nav--closed');
-      navMain.classList.add('main-nav--opened');
-      navToggle.classList.add('page-header__burger--opened')
-    } else {
-      navMain.classList.add('main-nav--closed');
-      navMain.classList.remove('main-nav--opened');
-      navToggle.classList.remove('page-header__burger--opened')
-    }
-  });
-</script>
+      navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('main-nav--closed')) {
+          navMain.classList.remove('main-nav--closed');
+          navMain.classList.add('main-nav--opened');
+          navToggle.classList.add('page-header__burger--opened')
+        } else {
+          navMain.classList.add('main-nav--closed');
+          navMain.classList.remove('main-nav--opened');
+          navToggle.classList.remove('page-header__burger--opened')
+        }
+      });
+  </script>
   </body>
 </html>

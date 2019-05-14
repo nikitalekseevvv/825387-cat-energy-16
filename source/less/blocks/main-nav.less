@@ -12,6 +12,10 @@
     &--opened {
       display: block;
     }
+
+    &--nojs {
+      display: block;
+    }
   }
 }
 
@@ -25,14 +29,14 @@
 .main-nav__item {
   display: block;
   padding-top: 24px;
-  padding-bottom: 24px;
-  width: auto;
+  padding-bottom: 23px;
+  width: 280px;
   font-size: 20px;
   line-height: 20px;
   font-weight: 500;
   text-align: center;
   text-transform: uppercase;
-  border-top: 1px solid @light-grey;
+  position: relative;
 
   &:hover,
   &:focus {
@@ -41,6 +45,16 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: @light-grey;
+    left: -20px;
+    top: 0;
   }
 
   a {
@@ -72,9 +86,14 @@
     line-height: 25px;
     font-weight: normal;
     margin-right: 35px;
+    width: auto;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &::before {
+      display: none;
     }
 
     a {
