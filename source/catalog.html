@@ -5,16 +5,19 @@
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
   </head>
-    <body>
+  <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <div class="center-wrapper">
       <header class="page-header page-header--catalog-and-filter">
         <a href="index.html" class="page-header__logo">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo-img" src="img/logo-mobile-header.svg" width="191" height="39" alt="Cat Energy">
+            <img class="page-header__logo-img" src="img/logo-mobile.svg" width="191" height="39" alt="Cat Energy">
           </picture>
         </a>
         <button class="page-header__burger" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -274,7 +277,7 @@
             </li>
             <li class="whole-catalog">
               <svg>
-                <use xlink:href="#plus"></use>
+                <use xlink:href="#plus-mobile-svg"></use>
               </svg>
               <p class="whole-catalog__title">Показать еще 100500 товаров</p>
               <p class="whole-catalog__description">На самом деле вкусов гораздо больше!</p>
@@ -313,7 +316,7 @@
             <a class="page-footer__link" href="#">
               <span class="visually-hidden">Вконтакте</span>
               <svg width="22" height="12">
-                <use xlink:href="img/sprite.svg#icon-vk"></use>
+                <use xlink:href="#icon-vk"></use>
               </svg>
             </a>
           </li>
@@ -321,7 +324,7 @@
             <a class="page-footer__link" href="#">
               <span class="visually-hidden">Инстаграм</span>
               <svg width="17" height="17">
-                <use xlink:href="img/sprite.svg#icon-insta"></use>
+                <use xlink:href="#icon-insta"></use>
               </svg>
             </a>
           </li>
@@ -329,7 +332,7 @@
             <a class="page-footer__link" href="#">
               <span class="visually-hidden">Фейсбук</span>
               <svg width="10" height="19">
-                <use xlink:href="img/sprite.svg#icon-fb"></use>
+                <use xlink:href="#icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -337,7 +340,7 @@
         <a class="page-footer__htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
           <span class="page-footer__htmlacademy-title">HTML Academy</span>
           <svg class="page-footer__htmlacademy-logo" width="27" height="34">
-            <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            <use xlink:href="#htmlacademy"></use>
           </svg>
         </a>
       </div>
