@@ -1,17 +1,13 @@
 .page-name {
   position: relative;
-}
 
-.page-name--index {
-  background-image: linear-gradient(#63a73a 305px, white 305px);
-}
-
-
-.page-name--index .center-wrapper {
-  background-image: url("../img/index-background-mobile.jpg");
-  background-repeat: no-repeat;
-  background-position: top center;
-  padding-top: 2px;
+  &--index {
+    background: linear-gradient(#63a73a 305px, white 305px);
+    background-image: url("../img/index-background-mobile.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 2px;
+  }
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
     background-image: url("../img/index-background-mobile@2x.jpg");
@@ -49,13 +45,14 @@
 
 .page-name__img {
   margin-bottom: 1px;
+  margin-left: 20px;
 }
 
 @media (min-width: @tablet-width) {
   .page-name--index {
-    min-height: 830px;
+    min-height: 828px;
     background-image: none;
-    padding-left: 90px;
+    padding-left: 75px;
 
     &::before {
       content: "";
@@ -63,7 +60,7 @@
       width: 709px;
       height: 609px;
       top: 243px;
-      left: 176px;
+      left: 30px;
       background-image: url("../img/index-can-tablet@1x.jpg");
       z-index: -1;
 
@@ -117,16 +114,16 @@
 @media (min-width: @desktop-width) {
   .page-name {
     &--index {
-      min-height: 554px;
+      min-height: 552px;
       background-image: linear-gradient(to left, #63a73a 50%, white 50%);
 
       &::before {
         content: "";
         position: absolute;
-        width: 552px;
+        width: 553px;
         height: 499px;
         top: 0;
-        left: 653px;
+        left: 472px;
         background-image: url("../img/index-can-desktop@1x.png");
         z-index: 1;
 
@@ -140,7 +137,7 @@
 
   .page-name__title {
     padding-top: 38px;
-    margin-left: 35px;
+    margin-left: 27px;
 
     &--catalog {
       margin-left: 0;
@@ -151,11 +148,11 @@
   }
 
   .page-name__description {
-    margin-left: 35px;
+    margin-left: 27px;
     margin-bottom: 54px;
   }
 
   .page-name__button {
-    margin-left: 35px;
+    margin-left: 27px;
   }
 }

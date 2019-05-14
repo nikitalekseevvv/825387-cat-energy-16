@@ -11,7 +11,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: 300px;
+  width: 301px;
   padding-left: 19px;
   padding-bottom: 10px;
   z-index: 1;
@@ -28,7 +28,7 @@
 
 .contacts__description {
   display: block;
-  margin-top: 16px;
+  margin-top: 17px;
   width: 140px;
   font-family: "Arial", sans-serif;
   color: @dark-grey;
@@ -37,33 +37,16 @@
 }
 
 .contacts__map {
+  display: block;
   width: 320px;
+  height: 464px;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-
-  &::after {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 55px;
-    height: 53px;
-    background-image: url("../img/map-pin.png");
-    background-size: cover;
-    top: 178px;
-    left: 129px;
-    z-index: 2;
-  }
-
-  img {
-    margin-top: 63px;
-    display: block;
-  }
 }
 
 @media (min-width: @tablet-width) {
   .contacts {
-    margin-top: 66px;
+    margin-top: 32px;
   }
 
   .contacts__address {
@@ -71,7 +54,7 @@
     position: relative;
     width: 625px;
     padding-left: 0;
-    padding-bottom: 0;
+    padding-bottom: 21px;
   }
 
   .contacts__title {
@@ -95,49 +78,33 @@
 
   .contacts__map {
     width: 768px;
-
-    &::after {
-      width: 113px;
-      height: 106px;
-      top: 145px;
-      left: 324px;
-    }
-
-    img {
-      margin-top: 42px;
-      width: 767px;
-      height: 400px;
-    }
+    height: 400px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .contacts {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
   .contacts__address {
     position: absolute;
     width: 494px;
-    min-height: 154px;
+    min-height: 133px;
     max-height: 200px;
-    top: 160px;
-    left: 488px;
+    top: 95px;
+    left: 22px;
     z-index: 1;
+    transform: translateX(0);
     padding-left: 76px;
     padding-top: 47px;
     overflow-y: auto;
   }
 
   .contacts__map {
-    width: 1440px;
-
-    &::after {
-      top: 145px;
-      left: 999px;
-    }
-
-    img {
-      z-index: -2;
-      width: 1440px;
-      height: 400px;
-    }
+    width: 100%;
   }
 
   .contacts__title {
