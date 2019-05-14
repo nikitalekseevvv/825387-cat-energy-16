@@ -49,10 +49,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-name--index {
-    min-height: 828px;
-    background-image: none;
-    padding-left: 75px;
+  .page-name {
+    &--index {
+      min-height: 828px;
+      background-image: none;
+      padding-left: 75px;
+    }
 
     &::before {
       content: "";
@@ -116,6 +118,7 @@
     &--index {
       min-height: 552px;
       background-image: linear-gradient(to left, #63a73a 50%, white 50%);
+      padding-left: 120px;
 
       &::before {
         content: "";
@@ -123,7 +126,7 @@
         width: 553px;
         height: 499px;
         top: 0;
-        left: 472px;
+        left: 490px;
         background-image: url("../img/index-can-desktop@1x.png");
         z-index: 1;
 
@@ -137,22 +140,22 @@
 
   .page-name__title {
     padding-top: 38px;
-    margin-left: 27px;
+    margin-left: 0;
 
     &--catalog {
       margin-left: 0;
       padding: 0;
       margin-top: 46px;
-      margin-bottom: 24px;
+      margin-bottom: 0;
     }
   }
 
   .page-name__description {
-    margin-left: 27px;
+    margin-left: 0;
     margin-bottom: 54px;
   }
 
   .page-name__button {
-    margin-left: 27px;
+    margin-left: 0;
   }
 }
