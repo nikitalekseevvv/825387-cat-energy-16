@@ -42,7 +42,7 @@
           <h1 class="page-name__title">Функциональное питание для котов</h1>
           <p class="page-name__description">Занялся собой? Займись котом!</p>
           <picture>
-            <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, index-can-mobile@2x.webp 2x">
+            <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
             <img class="page-name__img" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x" width="280" height="270" alt="Cat Energy Курица">
           </picture>
           <a class="page-name__button btn" href="form.html">Подобрать программу</a>
@@ -134,7 +134,9 @@
           <p class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
           <p class="contacts__description">ул. Большая Конюшенная, д. 19/8 <span class="contacts-city">Санкт-Петербург</span></p>
         </div>
-        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.32085871559023!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557818393799!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <div class="contacts__map-pin">
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002735!2d30.32085871559023!3d59.938719169054785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1557818393799!5m2!1sru!2sru" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
       </section>
     </main>
     <div class="center-wrapper center-wrapper--intimate">
@@ -176,24 +178,6 @@
           </a>
       </footer>
     </div>
-    <script>
-      var navMain = document.querySelector('.main-nav');
-      var navToggle = document.querySelector('.page-header__burger');
-
-      navMain.classList.remove('main-nav--nojs');
-      navToggle.classList.remove('page-header__burger--nojs');
-
-      navToggle.addEventListener('click', function() {
-        if (navMain.classList.contains('main-nav--closed')) {
-          navMain.classList.remove('main-nav--closed');
-          navMain.classList.add('main-nav--opened');
-          navToggle.classList.add('page-header__burger--opened')
-        } else {
-          navMain.classList.add('main-nav--closed');
-          navMain.classList.remove('main-nav--opened');
-          navToggle.classList.remove('page-header__burger--opened')
-        }
-      });
-  </script>
+    <script src="js/script.js"></script>
   </body>
 </html>
