@@ -18,6 +18,7 @@
   color: @black-two;
   font-size: 24px;
   line-height: 24px;
+  overflow: hidden;
 }
 
 .extra__list {
@@ -128,6 +129,7 @@
       top: 88px;
       left: -30px;
       background-color: @leaf;
+      overflow-x: hidden;
     }
   }
 
@@ -204,5 +206,94 @@
 
   .extra__icon {
     left: 91px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .extra {
+    padding-top: 75px;
+    margin-bottom: 18px;
+
+    &::before {
+      width: 957px;
+      top: 97px;
+      right: -110px;
+    }
+
+    &::after {
+      width: 70px;
+      top: 97px;
+      left: -110px;
+    }
+  }
+
+  .extra__title {
+    margin-left: 0;
+  }
+
+  .extra__items {
+    display: flex;
+    padding-top: 80px;
+  }
+
+  .extra__list {
+    width: 897px;
+    padding-top: 0;
+  }
+
+  .extra__item {
+    padding-bottom: 5px;
+    padding-left: 0;
+    padding-right: 2px;
+    border-left: none;
+    border-right: none;
+    flex-wrap: nowrap;
+  }
+
+  .extra__name {
+    width: 220px;
+    margin-right: 104px;
+    padding-top: 12px;
+  }
+
+  .extra__size {
+    width: 135px;
+    text-align: left;
+    margin-right: 110px;
+  }
+
+  .extra__price {
+    width: 45px;
+    text-align: left;
+  }
+
+  .extra__button {
+    width: 245px;
+    margin-top: 1px;
+  }
+
+  .extra__banner {
+    align-self: flex-start;
+    width: 245px;
+    margin-left: auto;
+    padding-top: 172px;
+    padding-bottom: 0;
+    min-height: 117px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/gift-photo-desktop@2x.jpg");
+      background-size: 245px auto;
+    }
+  }
+
+  .extra__text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .extra__icon {
+    left: 96px;
   }
 }
