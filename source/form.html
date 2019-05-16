@@ -37,11 +37,117 @@
       </header>
     </div>
     <main>
-      <section class="page-name--catalog-and-filter">
-        <div class="center-wrapper">
-          <h1 class="page-name__title page-name__title--catalog-and-filter">Каталог продукции</h1>
-        </div>
-      </section>
+      <div class="center-wrapper">
+        <section class="page-name--catalog-and-filter">
+          <h1 class="page-name__title page-name__title--catalog-and-filter">Подбор программы</h1>
+        </section>
+
+        <section class="form">
+          <p class="form__description">
+            Заполните анкету и мы подберем программу питания для вашего кота
+          </p>
+
+          <form action="https://echo.htmlacademy.ru" class="form__fields" method="get">
+
+            <div class="form__personal">
+              <div class="form__profile">
+                <ul class="form__list form__profile-list">
+                  <li class="form__profile-item">
+                    <label for="catname" class="form__profile-label">Имя:*</label>
+                    <input type="text" class="form__profile-textfield" id="catname" name="catname" placeholder="Барсик" value="Барсик"required>
+                  </li>
+                  <li class="form__profile-item">
+                    <label for="weight" class="form__profile-label">Вес (кг):*</label>
+                    <input type="text" class="form__profile-textfield" id="weight" name="weight" placeholder="7" value="7" required>
+                  </li>
+                  <li class="form__profile-item">
+                    <label for="age" class="form__profile-label">Возраст (лет):</label>
+                    <input type="text" class="form__profile-textfield" id="age" name="age" placeholder="7" value="7">
+                  </li>
+                </ul>
+              </div>
+              <div class="form__target">
+                <ul class="form__list form__target-list">
+                  <li class="form__target-item">
+                    <input type="radio" class="form__target-input" name="program" value="slim" id="slim" checked>
+                    <label for="slim" class="form__target-label" tabindex="0">Похудение</label>
+                  </li>
+                  <li class="form__target-item">
+                    <input type="radio" class="form__target-input" name="program" value="mass" id="mass">
+                    <label for="mass" class="form__target-label" tabindex="0">Набор массы</label>
+                  </li>
+                  <li class="form__target-item">
+                    <input type="radio" class="form__target-input" name="program" value="advice" id="advice">
+                    <label for="advice" class="form__target-label" tabindex="0">Не знаю (нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="form__contacts">
+              <p class="form__name form__name--contacts">
+                Контактные данные (владельца кота)
+              </p>
+              <ul class="form__list form__contacts-list">
+                <li class="form__contacts-item">
+                  <label for="email" class="form__contacts-label">E-mail:*</label>
+                  <input type="email" class="form__contacts-textfield" id="email" name="email" value="kuklachev@gmail.com" placeholder="kuklachev@gmail.com" required>
+                  <svg class="form__contacts-icon form__contacts-icon--mail" width="17" height="13">
+                    <use xlink:href="#icon-mail"></use>
+                  </svg>
+                </li>
+              </div>
+              <div class="form__block">
+                <li class="form__contacts-item">
+                  <label for="phone" class="form__contacts-label">Телефон:*</label>
+                  <input type="tel" class="form__contacts-textfield" id="phone" name="phone" value="8 (960) 900-60-90" placeholder="8 (960) 900-60-90" required>
+                  <svg class="form__contacts-icon form__contacts-icon--phone" width="21" height="20">
+                    <use xlink:href="#icon-phone"></use>
+                  </svg>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form__comment">
+              <p class="form__name form__name--comment">
+                Комментарий
+              </p>
+              <textarea class="form__comment-textarea" name="additional" placeholder="Расскажите обо всех повадках кота"></textarea>
+            </div>
+
+            <div class="form__extra">
+              <p class="form__name form__name--extra">
+                Дополнительно
+              </p>
+              <ul class="form__list form__extra-list">
+                <li class="form__extra-item">
+                  <input type="checkbox" class="form__extra-input" name="sweetener" id="sweetener" checked="">
+                  <label for="sweetener" class="form__extra-label" tabindex="0">Сахарозаменитель</label>
+                </li>
+                <li class="form__extra-item">
+                  <input type="checkbox" class="form__extra-input" name="water" id="water">
+                  <label for="water" class="form__extra-label" tabindex="0">Питьевая вода</label>
+                </li>
+                <li class="form__extra-item">
+                  <input type="checkbox" class="form__extra-input" name="milk" id="milk">
+                  <label for="milk" class="form__extra-label" tabindex="0">Молоко</label>
+                </li>
+                <li class="form__extra-item">
+                  <input type="checkbox" class="form__extra-input" name="vitamins" id="vitamins">
+                  <label for="vitamins" class="form__extra-label" tabindex="0">Витамины</label>
+                </li>
+              </ul>
+            </div>
+
+            <div class="form__button-block">
+              <button class="form__button btn" type="submit">Отправить заявку</button>
+              <span class="form__note">* — Обязательные поля</span>
+            </div>
+
+          </form>
+        </section>
+      </div>
+
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts__address contacts__address--catalog-and-filter">
