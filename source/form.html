@@ -37,7 +37,7 @@
       </header>
     </div>
     <main>
-      <div class="center-wrapper">
+      <div class="center-wrapper center-wrapper--for-line">
         <section class="page-name--catalog-and-filter">
           <h1 class="page-name__title page-name__title--catalog-and-filter">Подбор программы</h1>
         </section>
@@ -57,8 +57,8 @@
                     <input type="text" class="form__profile-textfield" id="catname" name="catname" placeholder="Барсик" value="Барсик"required>
                   </li>
                   <li class="form__profile-item">
-                    <label for="weight" class="form__profile-label">Вес (кг):*</label>
-                    <input type="text" class="form__profile-textfield" id="weight" name="weight" placeholder="7" value="7" required>
+                    <label for="weight" class="form__profile-label form__profile-label--weight">Вес (кг):*</label>
+                    <input type="text" class="form__profile-textfield form__profile-textfield--weight" id="weight" name="weight" placeholder="7" value="7" required>
                   </li>
                   <li class="form__profile-item">
                     <label for="age" class="form__profile-label">Возраст (лет):</label>
@@ -96,10 +96,8 @@
                     <use xlink:href="#icon-mail"></use>
                   </svg>
                 </li>
-              </div>
-              <div class="form__block">
                 <li class="form__contacts-item">
-                  <label for="phone" class="form__contacts-label">Телефон:*</label>
+                  <label for="phone" class="form__contacts-label form__contacts-label--phone">Телефон:*</label>
                   <input type="tel" class="form__contacts-textfield" id="phone" name="phone" value="8 (960) 900-60-90" placeholder="8 (960) 900-60-90" required>
                   <svg class="form__contacts-icon form__contacts-icon--phone" width="21" height="20">
                     <use xlink:href="#icon-phone"></use>

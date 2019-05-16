@@ -85,6 +85,16 @@
     top: -28px;
     left: -20px;
   }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: @border-calalog;
+    bottom: -28px;
+    left: -20px;
+  }
 }
 
 .form__target-item {
@@ -247,9 +257,10 @@
 .form__comment-textarea {
   width: 261px;
   height: 133px;
-  outline: none;
   padding-left: 14px;
   padding-top: 11px;
+  outline: 2px solid rgba(205, 205, 205, 0.5);
+  outline-offset: -1px;
 
   &::placeholder {
     font-size: 16px;
@@ -346,4 +357,401 @@
   font-size: 14px;
   line-height: 16px;
   text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .form {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 60px;
+    padding-left: 41px;
+    padding-right: 37px;
+
+    input {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .form__description {
+    width: 330px;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 55px;
+  }
+
+  .form__personal {
+    margin-top: 68px;
+  }
+
+  .form__profile-label {
+    margin-right: 17px;
+  }
+
+  .form__profile-textfield {
+    height: 46px;
+    padding-left: 18px;
+
+    &--weight {
+      padding-left: 20px;
+    }
+  }
+
+  .form__profile-item {
+    margin-bottom: 21px;
+  }
+
+  .form__target {
+    margin-top: 73px;
+    border: 1px solid @border-calalog;
+    padding-top: 34px;
+    padding-left: 40px;
+    margin-bottom: 78px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .form__target-item {
+    margin-bottom: 33px;
+  }
+
+  .form__target-label {
+    position: relative;
+    margin-left: 46px;
+
+    &::before {
+      left: -59px;
+      top: -5px;
+      width: 38px;
+      height: 38px;
+    }
+
+    &::after {
+      left: -49px;
+      top: 7px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .form__name {
+    display: block;
+    width: 520px;
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 77px;
+
+    &--extra {
+      margin-bottom: 65px;
+    }
+  }
+
+  .form__contacts {
+    &::after {
+      right: -67px;
+      top: 21px;
+      width: 147px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 3px;
+      background-color: @leaf;
+      left: -71px;
+      top: 21px;
+      width: 30px;
+    }
+  }
+
+  .form__contacts-item {
+    margin-bottom: 23px;
+  }
+
+  .form__contacts-label {
+    margin-right: 19px;
+
+    &--phone {
+      margin-right: 15px;
+      margin-left: -2px;
+    }
+  }
+
+  .form__contacts-textfield {
+    height: 45px;
+    padding-left: 20px;
+  }
+
+  .form__contacts-icon {
+    top: 18px;
+    right: 17px;
+
+    &--phone {
+      top: 15px;
+      right: 15px;
+    }
+  }
+
+  .form__comment {
+    margin-top: 66px;
+
+    &::after {
+      right: -67px;
+      top: 22px;
+      width: 479px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 3px;
+      background-color: @leaf;
+      left: -71px;
+      top: 22px;
+      width: 30px;
+    }
+  }
+
+  .form__comment-textarea {
+    width: 608px;
+    height: 161px;
+    padding-left: 17px;
+    padding-top: 9px;
+
+    &::placeholder {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+
+  .form__extra {
+    margin-top: 64px;
+    margin-bottom: 10px;
+
+    &::after {
+      right: -67px;
+      top: 21px;
+      width: 448px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      height: 3px;
+      background-color: @leaf;
+      left: -71px;
+      top: 21px;
+      width: 30px;
+    }
+  }
+
+  .form__extra-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form__extra-item {
+    width: 250px;
+    margin-bottom: 53px;
+
+    &:nth-child(2n-1) {
+      margin-right: 95px;
+    }
+  }
+
+  .form__extra-label {
+    position: relative;
+    margin-left: 56px;
+
+    &::before {
+      left: -57px;
+      top: -3px;
+      width: 37px;
+      height: 37px;
+    }
+
+    &::after {
+      width: 21px;
+      height: 16px;
+      left: -48px;
+      top: 8px;
+      background-size: 100%;
+    }
+  }
+
+  .form__button-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .form__button {
+    padding-bottom: 16px;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-left: 0;
+    width: 283px;
+    margin-right: 62px;
+  }
+
+  .form__note {
+    font-size: 16px;
+    text-align: left;
+    margin-top: -1px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form {
+    margin-bottom: 80px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form__personal {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-top: 67px;
+  }
+
+  .form__profile {
+    width: 570px;
+  }
+
+  .form__target {
+    margin-top: 0;
+    width: 528px;
+    padding-top: 32px;
+    padding-left: 42px;
+    margin-bottom: 34px;
+  }
+
+  .form__profile-item {
+    margin-bottom: 22px;
+  }
+
+  .form__profile-label {
+    &--weight {
+      margin-right: 19px;
+    }
+  }
+
+  .form__contacts {
+    &::after {
+      right: -110px;
+      top: 21px;
+      width: 777px;
+    }
+  }
+
+  .form__contacts-list {
+    display: flex;
+    padding-left: 1px;
+  }
+
+  .form__contacts-item {
+    width: 569px;
+
+    &:nth-child(2n-1) {
+      margin-right: 80px;
+    }
+  }
+
+  .form__name {
+    margin-bottom: 76px;
+
+    &--extra {
+      margin-bottom: 65px;
+    }
+  }
+
+  .form__contacts-icon {
+    top: 19px;
+    right: 19px;
+
+    &--phone {
+      top: 15px;
+      right: 17px;
+    }
+  }
+
+  .form__comment {
+    margin-top: 46px;
+
+    &::after {
+      right: -109px;
+      top: 22px;
+      width: 1110px;
+    }
+  }
+
+  .form__comment-textarea {
+    width: 1200px;
+    height: 161px;
+  }
+
+  .form__extra {
+    margin-top: 66px;
+    margin-bottom: 20px;
+
+    &::after {
+      right: -109px;
+      top: 21px;
+      width: 1078px;
+    }
+  }
+
+  .form__extra-list {
+    flex-wrap: nowrap;
+  }
+
+  .form__extra-item {
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    width: 230px;
+    margin-bottom: 53px;
+    margin-right: 95px;
+
+    &:nth-child(2n-1) {
+      margin-right: 95px;
+    }
+  }
+
+  .form__extra-label {
+    position: relative;
+    margin-left: 58px;
+
+    &::before {
+      left: -57px;
+      top: -3px;
+      width: 37px;
+      height: 37px;
+    }
+
+    &::after {
+      width: 21px;
+      height: 16px;
+      left: -48px;
+      top: 8px;
+      background-size: 100%;
+    }
+  }
+
+  .form__button {
+    width: 568px;
+    margin-right: 83px;
+  }
+
+  .form__note {
+    margin-top: -3px;
+  }
 }
