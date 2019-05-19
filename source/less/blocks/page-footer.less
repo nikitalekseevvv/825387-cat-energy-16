@@ -1,8 +1,11 @@
 .page-footer {
+  background-color: @light-grey;
+}
+
+.page-footer .center-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: @light-grey;
   padding-top: 39px;
   padding-bottom: 22px;
 }
@@ -115,7 +118,7 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-footer {
+  .page-footer .center-wrapper {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
@@ -179,7 +182,7 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-footer {
+  .page-footer .center-wrapper {
     padding-left: 39px;
     padding-right: 40px;
     padding-top: 43px;
